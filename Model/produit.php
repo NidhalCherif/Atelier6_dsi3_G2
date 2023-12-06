@@ -1,42 +1,29 @@
 <?php
+require_once "categorie.php";
 class produit
 {
-    private $reference;
+    private $id;
     private $libelle;
     private $prix;
     private $qte;
     private $image;
     private $promo;
     private $description;
+    private $categorie; // objet de la classe categorie
 
 
-    public function __construct($r, $l, $p, $q, $i, $pr, $des)
+    public function __construct($l, $p, $q, $i, $pr, $des, categorie $cat)
     {
-        $this->reference = $r;
+
         $this->libelle = $l;
         $this->prix = $p;
         $this->qte = $q;
         $this->image = $i;
         $this->promo = $pr;
         $this->description = $des;
-    }
-    /**
-     * Get the value of reference
-     */
-    public function getReference()
-    {
-        return $this->reference;
+        $this->categorie = $cat;
     }
 
-    /**
-     * Set the value of reference
-     */
-    public function setReference($reference): self
-    {
-        $this->reference = $reference;
-
-        return $this;
-    }
 
     /**
      * Get the value of libelle
@@ -144,5 +131,31 @@ class produit
         $this->description = $description;
 
         return $this;
+    }
+
+    /**
+     * Get the value of categorie
+     */
+    public function getCategorie()
+    {
+        return $this->categorie;
+    }
+
+    /**
+     * Set the value of categorie
+     */
+    public function setCategorie($categorie): self
+    {
+        $this->categorie = $categorie;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of id
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 }

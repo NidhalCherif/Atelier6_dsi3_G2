@@ -1,7 +1,7 @@
 
 <?php
 ob_start();
-echo "<h1>Liste des produits</h1>";
+
 echo "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem eum nisi recusandae obcaecati amet blanditiis facere magni laboriosam totam non tenetur cupiditate provident atque eos, quisquam asperiores, architecto adipisci voluptas.
 Quidem illum laboriosam consequatur deserunt quisquam dolorem accusantium inventore ratione eum culpa assumenda ut perspiciatis quod harum quasi, distinctio cupiditate minima fugit natus debitis soluta! Nisi repellat unde distinctio consequatur.
 Quis sint quod expedita quisquam recusandae veniam velit accusantium excepturi quibusdam eos voluptate, qui modi, nemo fugiat nisi perferendis ad, possimus laborum nostrum. Ullam, optio! Error dolorem nesciunt est amet?

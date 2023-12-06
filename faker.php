@@ -1,7 +1,7 @@
 <?php
 require_once "config/connexion.php";
 for ($i = 1; $i < 100; $i++) {
-    $ref = $i + 1;
+
     $libelle = "produit n°$i";
     $prix = random_int(300, 3000);
     $qt = random_int(1, 200);
@@ -18,10 +18,13 @@ explicabo aperiam placeat enim vero suscipit quasi molestias repudiandae,
  velit optio sed exercitatione";
     $image = "https://picsum.photos/300/?random=$i";
     $promo = random_int(0, 1);
+    $id_cat = random_int(1, 4);
 
 
     $sql = "insert into produit values
-('$ref','$libelle',$prix,$qt,'$image',$promo,'$desc')";
-    $res = $connexion->exec($sql);
+(null,'$libelle',$prix,$qt,'$image',$promo,'$desc',$id_cat)";
+    $obj = new connexion();
+    $pdo = $obj->getConnexion();
+    $res = $pdo->exec($sql);
 }
-header("location:produits.php");
+header("location:controller/produits.php");

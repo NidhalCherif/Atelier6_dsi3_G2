@@ -34,7 +34,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nos Produits</a>
+                        <a class="nav-link" href="../controller/produits.php">Nos Produits</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Nos Catégories</a>
